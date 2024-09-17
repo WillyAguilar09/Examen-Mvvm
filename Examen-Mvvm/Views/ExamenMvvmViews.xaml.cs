@@ -1,9 +1,13 @@
-namespace Examen_Mvvm.Views;
+using Examen_Mvvm.ViewModels;
 
-public partial class ExamenMvvmViews : ContentPage
+namespace Examen_Mvvm.Views
 {
-	public ExamenMvvmViews()
-	{
-		InitializeComponent();
-	}
+    public partial class ExamenMvvmViews : ContentPage
+    {
+        public ExamenMvvmViews()
+        {
+            InitializeComponent();
+            BindingContext = new ExamenMvvmViewModel();
+        }
+    }
 }
